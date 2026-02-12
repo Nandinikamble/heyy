@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Valentine 💖</title>
+
+<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<!-- Background Music -->
+<audio autoplay loop>
+  <source src="music.mp3.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container" id="box">
+<h1>Hey <span class="name">IDIOT</span> 💕</h1>
+
+<p>Distanaceeee Jayee ❤️</p>
+
+<p>Bhhhaaaadddd Meee</p>
+
+<p>Will you be my Valentine? 💖</p>
+
+<button id="yes" onclick="yesClicked()">Yes 💘</button>
+<button id="no" onmouseover="moveNo()">No 🙈</button>
+</div>
+
+<script>
+function yesClicked() {
+document.getElementById("box").innerHTML = `
+<h1>Forever Us 💖</h1>
+<p>You are my favorite notification ❤️</p>
+<p>No matter the distance, I choose you every day.</p>
+
+<div class="gallery">
+<img src="https://ih1.redbubble.net/image.5688121456.5019/st,small,507x507-pad,600x600,f8f8f8.jpg">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS1dZRbd1Bc_Hc0wFx_tjHsWptzemlExLvgg&s">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXvxIiCYmz6YZOB_d697GOqRQp-8ENdyQcmKSxVweLFw&s">
+</div>
+
+<h2>I Love You Always ❤️</h2>
+`;
+}
+
+function moveNo(){
+const noBtn = document.getElementById("no");
+noBtn.style.position = "relative";
+noBtn.style.left = Math.random()*150 - 75 + "px";
+noBtn.style.top = Math.random()*150 - 75 + "px";
+}
+</script>
+
+</body>
+</html>
